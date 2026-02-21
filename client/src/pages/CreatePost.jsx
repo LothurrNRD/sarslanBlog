@@ -39,7 +39,7 @@ const CreatePost = () => {
       const payload = { title, content, category, image, tags: [] };
       console.log("FRONTEND: Backend'e bu paket gidiyor:", payload);
 
-      const response = await axios.post('https://sarslanblog-1.onrender.com/api/blogs', 
+      const response = await axios.post('https://sarslanblog.onrender.com/api/blogs', 
         payload, 
         { headers: { Authorization: `Bearer ${token}` } }
       );

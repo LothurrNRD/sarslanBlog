@@ -29,8 +29,8 @@ const Home = () => {
       setLoading(true);
       try {
         const url = categoryFilter 
-          ? `https://sarslanblog-1.onrender.com/api/blogs?category=${categoryFilter}` 
-          : 'https://sarslanblog-1.onrender.com/api/blogs';
+          ? `https://sarslanblog.onrender.com/api/blogs?category=${categoryFilter}` 
+          : 'https://sarslanblog.onrender.com/api/blogs';
         const response = await axios.get(url);
         setBlogs(response.data);
       } catch (error) {

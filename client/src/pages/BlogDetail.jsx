@@ -10,7 +10,7 @@ const BlogDetail = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    axios.get(`https://sarslanblog-1.onrender.com/api/blogs/${id}`).then(res => {
+    axios.get(`https://sarslanblog.onrender.com/api/blogs/${id}`).then(res => {
       setBlog(res.data);
       setLoading(false);
     });
@@ -21,7 +21,7 @@ const BlogDetail = () => {
     if (window.confirm("Bu yazıyı silmek istediğine emin misin reisim?")) {
       const token = localStorage.getItem('token');
       try {
-        await axios.delete(`https://sarslanblog-1.onrender.com/api/blogs/${id}`, {
+        await axios.delete(`https://sarslanblog.onrender.com/api/blogs/${id}`, {
           headers: { Authorization: `Bearer ${token}` }
         });
         alert("Yazı başarıyla silindi!");
