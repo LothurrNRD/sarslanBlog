@@ -16,7 +16,7 @@ const handleRegister = async (e) => {
 
     try {
       console.log("3. Backend'e istek atılıyor (Port 5000)...");
-      const response = await axios.post('http://localhost:5000/api/auth/register', {
+      const response = await axios.post('https://sarslanblog-1.onrender.com/api/auth/register', {
         username, email, password
       });
       

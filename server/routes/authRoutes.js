@@ -3,10 +3,10 @@ const router = express.Router();
 // login fonksiyonunu da içeri aktardık
 const { register, login } = require('../controllers/authController'); 
 
-// POST http://localhost:5000/api/auth/register
+// POST https://sarslanblog-1.onrender.com/api/auth/register
 router.post('/register', register);
 
-// POST http://localhost:5000/api/auth/login
+// POST https://sarslanblog-1.onrender.com/api/auth/login
 router.post('/login', login); // Yeni rotamız!
 
 module.exports = router;
