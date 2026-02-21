@@ -16,7 +16,7 @@ const app = express();
 app.use(express.json({ limit: '30mb', extended: true }));
 app.use(express.urlencoded({ limit: '30mb', extended: true }));
 app.use(cors({
-  origin: 'https://sarslanblog.onrender.com', // BURAYA SADECE CLİENT URL'Nİ YAZ
+  origin: 'https://sarslanblog-1.onrender.com', // BURAYA SADECE CLİENT URL'Nİ YAZ
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
   credentials: true
 }));
