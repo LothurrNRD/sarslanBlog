@@ -15,7 +15,9 @@ const app = express();
 // Middleware'ler
 app.use(express.json({ limit: '30mb', extended: true }));
 app.use(express.urlencoded({ limit: '30mb', extended: true }));
-app.use(cors());
+app.use(cors({
+  origin: 'https://sarslanblog-1.onrender.com/' 
+}));
 
 // MongoDB Bağlantısı
 mongoose.connect(process.env.MONGO_URI)
