@@ -19,7 +19,7 @@ import XIcon from '@mui/icons-material/X'; // Twitter/X İkonu
 import Home from './pages/Home.jsx';
 import Login from './pages/Login.jsx';
 import Register from './pages/Register.jsx';
-import CreatePost from './pages/createPost.jsx';
+import CreatePost from './pages/CreatePost.jsx';
 import BlogDetail from './pages/BlogDetail.jsx';
 
 // Renk Tanımı (Antrasit Füme)
